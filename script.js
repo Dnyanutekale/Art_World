@@ -338,7 +338,23 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     const renderAbout = () => {
-        mainContent.innerHTML = `<div class="section container"><h2>ArtWorld</h2><p>Exploring human history and Earth's beauty.</p></div>`;
+        mainContent.innerHTML = `
+            <div class="section container">
+                <div class="section-header">
+                    <h2>ArtWorld Project</h2>
+                    <p>A journey into human creativity and natural wonders.</p>
+                </div>
+                <div class="glass" style="padding: 40px; border-radius: 30px; line-height: 1.8;">
+                    <p>ArtWorld is a curated platform designed to bridge the gap between masterpiece art, ancient history, and the raw beauty of our planet. Our mission is to provide an immersive, storytelling-first experience for curious minds.</p>
+                    <div style="margin-top: 30px; display: flex; gap: 15px; flex-wrap: wrap;">
+                        <a href="https://github.com/Dnyanutekale/Art_World" target="_blank" class="btn primary">
+                            <i data-lucide="github" style="width: 18px; margin-right: 8px; vertical-align: middle;"></i> View on GitHub
+                        </a>
+                        <button class="btn secondary" onclick="navigate('home')">Return Home</button>
+                    </div>
+                </div>
+            </div>
+        `;
     };
 
     // --- Interaction Handlers ---
